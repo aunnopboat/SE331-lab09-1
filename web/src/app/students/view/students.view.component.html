@@ -38,6 +38,9 @@
         <button type="submit" class="btn btn-default">Add</button>
       </div>
     </div>
+    <course-list [count]="student?.enrolledCourse.length"
+    [enrolledCourse]="student?.enrolledCourse"></course-list>
   </form>
 </div>
+
 

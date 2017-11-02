@@ -1,3 +1,5 @@
+import {Course} from './course';
+
 export class Student{
 	id: number;
 	studentId: string;
@@ -8,4 +10,6 @@ export class Student{
 	featured:boolean;
 	penAmount:number;
 	description:string;
+
+	enrolledCourse?:Course[];
 }
