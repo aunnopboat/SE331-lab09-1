@@ -5,7 +5,6 @@
     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
       View <span class="caret"></span>
     </a>
-
     <ul class="dropdown-menu">
       <li *ngFor="let student of students">
         <a  (click)="showDetail(student)">
@@ -14,6 +13,8 @@
       </li>
     </ul>
   </li>
+  <li role="presentation" routerLinkActive="active"><a routerLink="/listCourse">List Course</a></li>
+  <li role="presentation" routerLinkActive="active"><a routerLink="/addCourse">Add Course</a></li>
 </ul>
 
 

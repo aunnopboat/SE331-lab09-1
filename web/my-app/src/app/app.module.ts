@@ -16,6 +16,7 @@ import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import {StudentsDataServerService} from './service/students-data-server.service';
 import {CourseListComponent} from './students/course-list/course-list.component';
 import { ListCourseComponent } from './course/list-course/list-course.component';
+import { AddCourseComponent } from './course/add-course/add-course.component';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import { ListCourseComponent } from './course/list-course/list-course.component'
     StudentsComponent,
     StudentsAddComponent,
     StudentsViewComponent,
-    MenuComponent, FileNotFoundComponent,CourseListComponent, ListCourseComponent],
+    MenuComponent, FileNotFoundComponent,CourseListComponent, ListCourseComponent, AddCourseComponent],
   imports: [BrowserModule, FormsModule, HttpModule,
     StudentRoutingModule, AppRoutingModule],
   bootstrap: [AppComponent],

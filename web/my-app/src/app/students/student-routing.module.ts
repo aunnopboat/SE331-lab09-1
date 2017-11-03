@@ -3,6 +3,8 @@ import {RouterModule, Routes}  from '@angular/router';
 import {StudentsComponent} from './list/students.component';
 import {StudentsAddComponent} from './add/students.add.component';
 import {StudentsViewComponent} from './view/students.view.component';
+import {AddCourseComponent} from '../course/add-course/add-course.component';
+import {ListCourseComponent} from '../course/list-course/list-course.component';
 
 const studentRoutes: Routes = [
   {path: 'detail/:id',component:StudentsViewComponent},
@@ -28,7 +30,10 @@ const studentRoutes: Routes = [
     path: '',
     redirectTo: '/list',
     pathMatch: 'full'
-  }
+  },
+  {path: 'addCourse', component: AddCourseComponent},
+  {path: 'listCourse', component: ListCourseComponent},
+
 ];
 
 @NgModule({
