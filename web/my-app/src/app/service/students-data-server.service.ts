@@ -7,9 +7,7 @@ import "rxjs/add/operator/mergeMap";
 
 @Injectable()
 export class StudentsDataServerService {
-  constructor(private http: Http) {
-
-  }
+  constructor(private http: Http) {}
 
   getStudentsData() {
     let studentArray: Student[];

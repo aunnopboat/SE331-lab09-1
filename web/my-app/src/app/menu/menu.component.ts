@@ -10,6 +10,7 @@ import {Router} from "@angular/router";
 export class MenuComponent {
   constructor(private studentDataService: StudentsDataService, private router: Router ) {
   }
+
   students:Student[];
   ngOnInit() {
     this.studentDataService.getStudentsData()

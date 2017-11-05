@@ -17,6 +17,7 @@ import {StudentsDataServerService} from './service/students-data-server.service'
 import {CourseListComponent} from './students/course-list/course-list.component';
 import { ListCourseComponent } from './course/list-course/list-course.component';
 import { AddCourseComponent } from './course/add-course/add-course.component';
+import {CourseServerService} from './service/course-server.service';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { AddCourseComponent } from './course/add-course/add-course.component';
   imports: [BrowserModule, FormsModule, HttpModule,
     StudentRoutingModule, AppRoutingModule],
   bootstrap: [AppComponent],
-  providers: [{provide: StudentsDataService, useClass: StudentsDataServerService}],
+  providers: [{provide: StudentsDataService, useClass: StudentsDataServerService},{provide: CourseServerService, useClass: CourseServerService}],
 })
 export class AppModule {
 }

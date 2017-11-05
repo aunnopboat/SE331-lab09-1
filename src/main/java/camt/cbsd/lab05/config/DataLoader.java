@@ -20,11 +20,16 @@ public class DataLoader implements ApplicationRunner {
     @Autowired
     public void setStudentDao(StudentDao studentDao) {
         this.studentDao = studentDao;
-
     }
 
     @Autowired
     CourseDao courseDao;
+
+    @Autowired
+    public void setCourseDao(CourseDao courseDao) {
+        this.courseDao = courseDao;
+    }
+
 
     String baseUrl;
     String imageUrl;
@@ -56,9 +61,9 @@ public class DataLoader implements ApplicationRunner {
         Course course2 = Course.builder().courseId("953323").courseName("Software Construction").build();
         Course course3 = Course.builder().courseId("953499").courseName("Software Project").build();
 
-        courseDao.add(course1);
-        courseDao.add(course2);
-        courseDao.add(course3);
+        courseDao.addCourse(course1);
+        courseDao.addCourse(course2);
+        courseDao.addCourse(course3);
         studentDao.addStudent(student1);
         studentDao.addStudent(student2);
         studentDao.addStudent(student3);

@@ -1,10 +1,7 @@
 package camt.cbsd.lab05.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,8 +17,11 @@ import javax.persistence.Id;
 public class Course {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
+
     long id;
+    @NonNull
     String courseId;
+    @NonNull
     String courseName;
 
 }
