@@ -23,6 +23,7 @@ export class AddCourseComponent implements OnInit {
         result = resultStudent
         if (result != null) {
           this.router.navigate(['/listCourse']);
+          alert('Success adding');
         } else {
           alert('Error in adding the student');
         }
